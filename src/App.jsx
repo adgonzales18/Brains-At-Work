@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
-    <Header />
-    <Hero />
+    <div className='h-screen w-screen flex flex-col'>
+      <Header />
+      <Hero />
+    </div>
     </>
   )
 }
