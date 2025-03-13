@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: Montserrat, sans-serif;
+  --font-teacher: Teacher, sans-serif;
+  --font--notoserif: Noto Serif, serif;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+a:hover {
+  color: gray;
+}
