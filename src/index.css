@@ -14,13 +14,14 @@
   width: 100%;
   margin: 0;
   overflow-x: hidden;
+  color: white;
 }
 
 a {
   font-weight: 500;
-  color: black;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
-  color: gray;
+  color: black;
 }
