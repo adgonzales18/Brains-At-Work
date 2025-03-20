@@ -1,12 +1,13 @@
 import React from 'react'
 import BannerPhoto from '../assets/banner-photo.jpg'
 import Button from '../components/Button'
+import Form from '../components/Form'
 
-function Hero() {
+function Hero({isFormVisible, toggleForm}) {
   return (
-    <section id='hero' className='flex flex-col items-center bg-blue-900 h-full'>
+    <section id='hero' className='flex flex-col items-center bg-blue-900 h-full w-auto'>
         <div className='relative'>
-          <img src={BannerPhoto} alt="Woman Teaching Children Photo, Header Photo" className='w-screen h-auto brightness-80' />
+          <img src={BannerPhoto} alt="Woman Teaching Children Photo, Header Photo" className='w-full h-auto brightness-80' />
           <div className='absolute bottom-0 left-0 w-full h-3/8 bg-gradient-to-t from-black to-transparent'></div>
           <div className='absolute bottom-1/16 left-1/3 transform -translate-x-1/2 text-white'>
             <h1 className='relative font-bold text-2xl text-nowrap '>Creative Education</h1>
@@ -26,8 +27,14 @@ function Hero() {
           </div>
           <Button 
           label="Enroll Now"
+          onClick={toggleForm}
           />
         </div>
+        {isFormVisible && (
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white p-6 shadow-lg transform transition-all duration-300 ease-in-out">
+          <Form />
+        </div>
+      )}
     </section>
     
   )

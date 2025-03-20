@@ -1,10 +1,14 @@
-import {React, useState} from 'react'
+import {React, use, useState} from 'react'
 import './header.css'
 import CompanyLogo from '../assets/Q1.png'
 
-function Header() {
+function Header({toggleForm}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleEnrollClick = () => {
+    toggleForm();    
+    setMenuOpen(false);  
+  }
   return (
     <header className='bg-transparent relative'>
         <nav className='mx-auto flex w-full items-center justify-between px-3 p-2 lg:px-8'>
@@ -20,10 +24,9 @@ function Header() {
             <ul
               className={`absolute top-full right-0 w-full backdrop-blur-sm p-4 space-y-4 justify-end z-100  ${menuOpen ? 'block opacity-100': 'invisible opacity-0'} transition-opacity duration-300 md:visible md:flex md:flex-row md:space-x-6 md:static md:p-0 md:backdrop-blur-none`}
             >
-              <li><a href="">Offer</a></li>
-              <li><a href="">Testimonials</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a className="text-black" href="">Enroll</a></li>
+              <li><a href="#offer">Offer</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a className="text-black" href="#" onClick={handleEnrollClick}>Enroll</a></li>
             </ul>
         </nav>
     </header>

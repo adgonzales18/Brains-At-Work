@@ -2,7 +2,7 @@ import React from 'react'
 
 function Offer() {
   return (
-    <section class="bg-white">
+<section id="offer" class="bg-white">
   <div class="py-8 px-4 mx-auto max-w-screen">
       <div class="mx-auto max-w-screen-md text-center mb-8">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Focused learning experience for students</h2>
