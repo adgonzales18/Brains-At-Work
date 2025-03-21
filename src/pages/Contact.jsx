@@ -39,15 +39,15 @@ function Contact() {
                     <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4">Preferred method  of communication</h4>
                     <div class="flex">
                         <div class="flex items-center mr-11">
-                            <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"/>
+                            <input id="radio-group-1" type="radio" name="radio-group" class="form-radio text-indigo-500 border-gray-500 rounded-full w-4 h-4 mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"/>
                             <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
-                                <span class="border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 "></span> Email 
+                               Email 
                             </label>
                         </div>
                         <div class="flex items-center">
-                            <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"/>
+                            <input id="radio-group-2" type="radio" name="radio-group" class="form-radio text-indigo-500 border-gray-500 rounded-full w-4 h-4 mr-2 checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"/>
                             <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
-                                <span class="border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 "></span> Phone 
+                                Phone 
                             </label>
                         </div>
                     </div>

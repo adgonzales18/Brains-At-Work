@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-screen flex flex-col'>
+    <div className='h-screen w-screen flex flex-col'>
         <Header toggleForm={toggleForm} />
         <Hero toggleForm={toggleForm} isFormVisible={isFormVisible} />
       </div>
@@ -27,6 +27,7 @@ function App() {
         <Footer />
       </div>
     </>
+      
   )
 }
 
