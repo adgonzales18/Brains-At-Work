@@ -22,7 +22,7 @@ function App() {
       <div className='h-auto w-screen flex flex-col'>
         <Offer />
       </div>
-      <div className='h-auto w-screen bg-blue-900 flex flex-col'>
+      <div className='h-auto w-screen bg-blue-900 flex flex-col sm:h-screen'>
         <Contact />
         <Footer />
       </div>
