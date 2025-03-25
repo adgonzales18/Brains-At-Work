@@ -6,8 +6,8 @@ import Form from '../components/Form'
 function Hero({isFormVisible, toggleForm}) {
   return (
     <section id='hero' className='flex flex-col items-center bg-blue-900 h-full sm:flex-row'>
-        <div className='relative sm:w-9/10 sm:h-full'>
-          <img src={BannerPhoto} alt="Woman Teaching Children Photo, Header Photo" className='w-full h-full brightness-80 sm:w-full sm:h-full sm:bg-contain' />
+        <div className='relative sm:w-2/3 sm:h-full'>
+          <img src={BannerPhoto} alt="Woman Teaching Children Photo, Header Photo" className='w-full h-full brightness-80 sm:h-full sm:bg-cover' />
           <div className='absolute bottom-0 left-0 w-full h-3/8 bg-gradient-to-t from-black to-transparent'></div>
           <div className='absolute bottom-1/16 left-1/3 transform -translate-x-1/2 text-white'>
             <h1 className='relative font-bold text-2xl text-nowrap sm:text-5xl '>Creative Education</h1>
